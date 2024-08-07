@@ -1,0 +1,41 @@
+.line {
+    width: 1px;
+    height: 100vh;
+    background-color: rgb(188, 187, 187);
+}
+
+.bodyContent {
+    display: grid;   
+    grid-template-columns: 1fr;
+    padding: 2%;
+    position: relative;
+    top: 1rem;
+    justify-content: center;
+    text-align: center;
+    width: 700px;
+    margin: 0 auto;
+    border: 0.01rem solid black;
+    height: max-content;
+    border-radius: 7px;
+    background-color: rgb(245,248,255);
+    box-shadow: 5px 5px 15px rgb(237, 243, 249);
+    border: 1px solid rgb(231, 237, 250);
+    margin-top: 1%;
+}
+
+
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.titles {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}

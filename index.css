@@ -1,0 +1,39 @@
+body {
+    overflow-x: hidden;
+}
+
+* {
+    font-family: sans-serif;  
+}
+
+.navTab {
+    background-color: #501eda;
+    /* background-color: azure; */
+}
+
+.navTabText {
+    color: ghostwhite;
+}
+
+.box {
+    width: 837px;
+    height: 258px;
+    border-radius: 7px;
+    background-color: rgb(245,248,255);
+    box-shadow: 5px 5px 15px rgb(237, 243, 249);
+    border: 1px solid rgb(231, 237, 250);
+}
+
+img {
+    width: 206px;
+    height: 206px;
+    margin: 5%;
+    border-radius: 7px;
+}
+
+.rectangle {
+    width: 372px;
+    height: 353px;
+    margin: 5%;
+    border-radius: 7px;
+}

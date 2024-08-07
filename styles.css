@@ -1,0 +1,32 @@
+body {
+    font-family: sans-serif;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 25%;
+    margin-top: 2%;
+}
+
+.texts {
+    border-radius: 45px;
+    gap: 100px;
+    width: 800px;
+    height: 200px;
+    box-shadow: 5px 5px 5px #ced1dd;
+    background-color: #f5f8ff;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+.rectangleSmall {
+    position: relative;
+    left: 2%;
+    top: 17%;
+    width: 140px;
+    height: 140px;
+}

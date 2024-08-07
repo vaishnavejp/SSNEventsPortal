@@ -1,0 +1,53 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    background-color: white;
+    padding-bottom: 5%;
+
+    
+}
+.headings{
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.text24{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+.text18{
+    margin-top: 0%;
+    padding: 0%;
+    font-size: 18px;
+}
+.EventDisplay{
+    display: flex;
+    justify-content: center;
+    
+}
+#EventVideo{
+    background-color:  rgba(86, 90, 92, 0.281);
+    width: 870px;
+    height: 440px;
+    border-radius: 25px;
+                
+}
+#EventDetails{
+    margin-left: 50px;
+    display: block;
+}
+#Register{
+    text-align: center;
+    width: 290px;
+    height: 50px;
+    border: none;
+    border-radius: 25px;
+    font-size: 20px;
+    text-decoration: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+}

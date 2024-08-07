@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<link href="nav.css" rel="stylesheet">
+<head>
+    <style>
+        body {
+            /* width: 1440px; */
+            /* height: 70px; */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: black;
+            background-color: white;
+        }
+        section {
+            margin-left: 70px;
+            margin-top: 40px;
+        }
+
+        .headings {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .text24 {
+            /* margin-top: 50px; */
+            margin-bottom: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            
+        }
+
+        .text18 {
+            margin-top: 0%;
+            padding: 0%;
+            font-size: 16px;
+        }
+        .uploadForm{
+            width: 810px;
+            /* height: 1240px; */
+            /* height: 1440px; */
+            height: auto;
+            border: 2px;
+            background-color: #b3aef1;
+            /* background-color: #F5F8FF; */
+            
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 25px;
+            padding-top: 60px;
+            padding-bottom: 60px;
+            box-shadow: 0px 0px 10px rgba(42, 50, 51, 0.692);
+        }
+        .lineText{
+            width: 500px;
+            height: 40px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 4px rgba(42, 50, 51, 0.692);
+            margin-top: 10px;
+        }
+        .smallLineText{
+            width: 165px;
+            height: 35px;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 14px;
+        }
+        .uploadBox{
+            display: block;
+            width: 140px;
+            height: 45px;
+            margin-left: 10px;
+            margin-right: 10px;
+            border:none;
+            background-color:#b3aef1;
+            
+            border-radius: 25px;
+            box-shadow: 0px 0px 3px rgba(42, 50, 51, 0.692);
+
+        }
+        input{
+            border: none;
+            box-shadow: 0px 0px 1px rgba(42, 50, 51, 0.692);
+        }
+
+        .imgUpload{
+            display: block;
+            width: 235px;
+            font-size: 12px;
+            
+        }
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            /* padding-top: 100px; Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+            display: none;
+            align-items: center;
+            justify-content: center;
+        
+        }
+
+        /* Modal Content */
+        .modal-content {
+        background-color: #fefefe;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 40%;
+        border-radius: 10px;
+        }
+
+        /* The Close Button */
+        .close {
+        color: #aaaaaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navTab">
+        <p class="navTabText" style="font-size: 24px; font-weight: bold;">SSN Events Portal</p>
+        <div class="rightHalf">
+            <a href="http://localhost:8080/MiniProject/Dashboard" class="navTabText">Dashboard</a>
+            <a href="http://localhost:8080/MiniProject/PastEvents" class="navTabText">Past Events</a>
+            <a href="Upload.html" class="navTabText">Upload</a>
+            <div class="dropdown">
+                <a class="navTabText" style="font-weight:bold">Infrastructure</a>
+                <div class="dropdown-content">
+                    <a href="checkavailability.html" style="font-weight:bold">Book</a>
+                    <a href="http://localhost:8080/MiniProject/BookingHistory">History</a>
+                </div>
+            </div>
+            <span class="dot"></span>
+        </div>
+    </nav>
+    <section>
+        <p class="headings" style="text-align: center;">Upload Event</p>
+        <div class="uploadForm">
+            <!-- <div style="display: inline;"> -->
+            <form action="http://localhost:8080/MiniProject/uploadServlet" method="post" enctype="multipart/form-data">
+                <label class="text24" >Name <span style="color: red;">*</span></label><br>
+                <input class="lineText" type="text" name="eventName" required><br><br><br>
+
+                <label class="text24">Organizing Committee <span style="color: red;">*</span></label><br>
+                <input class="lineText" type="text" name="orgCom" required><br><br><br>
+
+                <label class="text24">Event Type <span style="color: red;">*</span></label><br>
+                    <input name="Etype" type="radio" value="Regular" onclick="RegularDisplay();" required>
+                    <label class="text18">Regular<br>
+                    <input type="radio" name="Etype" value="Seminar" onclick="SeminarDisplay();" required>
+                    <label class="text18">Seminar<br><br><br>
+
+                <label class="text24">Contact <span style="color: red;">*</span></label><br>
+                <input class="lineText" type="text" name="contact" required><br><br><br>
+
+                <label class="text24">Description</label><br>
+                <input class="lineText" style="height: 120px;" type="text" name="description"><br><br><br>
+                
+                <!-- <div style="display: flex;"> -->
+                <div style="display: flex; justify-content: space-between;">
+                    <label class="text24">Date <span style="color: red;">*</span></label><br>
+                    <input class="smallLineText" type="date" name="eventDate" required><br><br><br>
+                    
+                    <label class="text24">Time <span style="color: red;">*</span></label><br>
+                    <input class="smallLineText" type="time" name="eventTime" required><br><br><br>
+                </div>
+                <!-- </div> -->
+
+                <div style="display: flex; justify-content: space-between;">
+                    <div style="display: inline;">
+                    <label class="text24">Poster</label><br>
+                    <input class="imgUpload" type="file" name="photo"><br><br>
+                    </div>
+
+                    <div id="SeminarDetails" style="display: none;">
+                    <label class="text24" id="vidLabel" >Video</label><br>
+                    <input class="imgUpload" id="video" type="file" name="video"><br><br>
+                    </div>
+                </div>
+
+                <label class="text24">Registration Link</label><br>
+                <input class="lineText" type="text" name="registerLink"><br><br><br>
+
+                <div style="display: flex; justify-content: center;">
+                    <button type="button" id="clearBtn" value="Discard" class="uploadBox text18" style="background-color:white;">Discard</button><br>
+                    <button type="button" id="myBtn" value="Upload" class="uploadBox text18 submit" style="background-color: #501EDA; color: white;">Upload</button>
+                <div>
+                    <div id="myModal" class="modal">
+                        <!-- Modal content -->
+                          <div class="modal-content">
+                              <span class="close">&times;</span>
+                              <p class="text24" style="text-align: center;">Confirm upload</p>
+                              <input id="confirm" class="submit" type="submit" value="Confirm" class="uploadBox text18" style=" display: block; text-align: center; margin-left: auto; margin-right: auto;" onclick="origPage();">
+                          </div>
+                    </div>
+            </form>
+            <script src="actions.js"></script>
+            <!-- </div> -->
+        </div>
+    </section>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>EventUploaded</title>
+        <link rel='stylesheet' href='nav.css'>
+        <!-- <link rel='stylesheet' href='style.css'> -->
+        <style>
+            body{
+                text-align: center;
+                display: flex;
+                height: 100vh;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                background-color: #F5F8FF;
+            }
+            .button{
+                height: 40px;
+                padding: 10px 40px;
+                border-radius: 25px;
+                border: 1px #ced1dd solid;
+                background-color: #501eda;
+                color: #F5F8FF;
+                text-decoration: none;
+            }
+            .outer{
+                width: 40%;
+                margin: 0%;
+                padding:50px;
+                border-radius: 25px;
+                background-color: #b3aef1;
+                box-shadow: #ced1dd 0px 4px 8px 0px;
+            }
+            a:visited{
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navTab">
+            <p class="navTabText" style="font-size: 24px; font-weight: bold;">SSN Events Portal</p>
+            <div class="rightHalf">
+                <a href="http://localhost:8080/MiniProject/Dashboard" class="navTabText">Dashboard</a>
+                <a href="http://localhost:8080/MiniProject/PastEvents" class="navTabText">Past Events</a>
+                <a href="Upload.html" class="navTabText">Upload</a>
+                <div class="dropdown">
+                    <a class="navTabText" style="font-weight:bold">Infrastructure</a>
+                    <div class="dropdown-content">
+                        <a href="checkavailability.html" style="font-weight:bold">Book</a>
+                        <a href="http://localhost:8080/MiniProject/BookingHistory">History</a>
+                    </div>
+                </div>
+                <span class="dot"></span>
+            </div>
+        </nav>
+        
+        <div class='outer'>
+            <h2>Are you sure you want to delete this event</h2><br><br>
+            <button onclick="history.back()" class="button">No</button>
+            <button class="button"><a href="http://localhost:8080/MiniProject/DS">Yes</a></button>
+            
+        </div>
+    </body>
+</html>

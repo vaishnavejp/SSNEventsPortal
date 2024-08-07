@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Book Infrastructure</title>
+        <link rel="stylesheet" href="nav.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="book.css">
+        <style>
+            body{
+                text-align: center;
+                display: flex;
+                height: 100vh;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                background-color: #F5F8FF;
+            }
+            .button{
+                height: 40px;
+                padding: 10px 40px;
+                border-radius: 25px;
+                border: 1px #ced1dd solid;
+                background-color: #501eda;
+                color: #F5F8FF;
+                text-decoration: none;
+            }
+            .outer{
+                width: 40%;
+                margin: 0%;
+                padding:50px;
+                border-radius: 25px;
+                background-color: #b3aef1;
+                box-shadow: #ced1dd 0px 4px 8px 0px;
+            }
+        </style>
+        
+        <script>
+            function callSlotServlet(){
+                
+                    document.forms[0].action = 'ShowSlots?date='+document.getElementById("date");
+                    document.forms[0].submit();
+                
+            }
+            // function callSlotServlet(){
+            //     if(checkDate() == true){
+            //         document.forms[0].action = 'ShowSlots?date='+document.getElementById("date");
+            //         document.forms[0].submit();
+            //     }
+            //     else alert("Invalid date!");
+            // }
+            // function checkDate(){
+            //     var date = document.getElementById("date");
+            //     var currdate = new Date();
+            //     if(date<=currdate) true; 
+            // }
+        </script>
+    </head>
+    <body>
+        <nav class="navTab">
+            <p class="navTabText" style="font-size: 24px; font-weight: bold;">SSN Events Portal</p>
+            <div class="rightHalf">
+                <a href="http://localhost:8080/MiniProject/Dashboard" class="navTabText">Dashboard</a>
+                <a href="http://localhost:8080/MiniProject/PastEvents" class="navTabText">Past Events</a>
+                <a href="Upload.html" class="navTabText">Upload</a>
+                <div class="dropdown">
+                    <a class="navTabText" style="font-weight:bold">Infrastructure</a>
+                    <div class="dropdown-content">
+                        <a href="checkavailability.html" style="font-weight:bold">Book</a>
+                        <a href="http://localhost:8080/MiniProject/BookingHistory">History</a>
+                    </div>
+                </div>
+                <span class="dot"></span>
+            </div>
+        </nav><br><br><br><br>
+
+        <h2>Book Infrastructure</h2>
+        <div class="outer">    
+            <form>
+                <label>Select date:</label>
+                <input type="date" name="date" id="date"><br><br>
+                <button class="button" onclick="callSlotServlet()">Check availability</button>  
+                <!-- <a class="button" style="background-color: #F5F8FF;border:#501eda 1px solid" href="history.back">Check availability</button> -->
+            </form>
+        </div>
+    </body>
+</html>

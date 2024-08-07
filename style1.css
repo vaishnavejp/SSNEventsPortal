@@ -1,0 +1,65 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    background-color: white;
+}
+section {
+    margin-top: 40px;
+    display: block;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-bottom: 40px;
+}
+
+.headings {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.text24 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+.text18 {
+    margin-top: 0%;
+    padding: 0%;
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+.EventDisplay {
+    display: flex;
+}
+
+#EventPicture {
+    background-color: rgba(0, 183, 255, 0.281);
+    width: 580px;
+    height: 540px;
+    border-radius: 25px;
+    background-image: url(https://dce0qyjkutl4h.cloudfront.net/wp-content/uploads/2020/10/flutter-app-developer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+#EventDetails {
+    margin-left: 70px;
+    display: block;
+    margin-right: auto;
+    padding-right: 2%;
+    padding-left: 10px;
+}
+
+#Register {
+    text-align: center;
+    width: 290px;
+    height: 50px;
+    border: none;
+    border-radius: 25px;
+    font-size: 20px;
+    text-decoration: none;
+}

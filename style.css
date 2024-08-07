@@ -1,0 +1,21 @@
+/* Common style for all pages */
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: #32303A
+}
+/* Main action button */
+.submit{
+    font-size: 16px;
+    padding: 15px 40px;
+    border-radius: 25px;
+    border: 1px #ced1dd solid;
+    background-color: #b3aef1 ;
+    font-weight: bolder;
+    text-decoration: none;
+    color: #32303A;
+}
+.submit:hover{
+    background-color: #7451d6;
+    color: #F5F8FF;
+}

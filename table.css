@@ -1,0 +1,35 @@
+/* Styling for table view */
+table{
+    border-collapse: collapse;
+    border-radius: 25px;
+    width: 100%;
+}
+.titles{
+    background-color: #b3aef1;
+    border-radius: 25px 25px 0px 0px;
+    padding: 10px;
+}
+th{
+    width: 18%;
+}
+tr,th,td{
+    padding: 25px 10px;
+    text-align: center;
+}
+tr:hover{
+    background-color: #ced1dd;
+}
+.titles:hover{
+    background-color: #b3aef1;
+}
+.big_col{
+    width: 28%;
+}
+#outer{
+    background-color: #F5F8FF;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 25px;
+    box-shadow: #ced1dd 0px 4px 8px 0px;
+}

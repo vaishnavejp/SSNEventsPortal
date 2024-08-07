@@ -1,0 +1,42 @@
+* {
+    font-family: sans-serif;
+}
+
+
+#rectangle {
+    width: 372px;
+    height: 353px;
+    background-color: rgb(217, 217, 217);
+    border-radius: 7px;
+}
+
+.bodyContent {
+    display: grid;   
+    grid-template-columns: 2fr 1fr;
+    /* display: block; */
+    padding: 2%;
+    justify-content: center;
+}
+
+.eventsBody{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+#rectangleSmall {
+    background-color: rgb(217, 217, 217);
+}
+
+.description h4, p {
+    font-size: small;
+}
+
+.line {
+    width: 1px;
+    height: 100vh;
+    background-color: rgb(188, 187, 187);
+}
+
+img {
+    width: 10px;
+}

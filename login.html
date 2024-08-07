@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <link href="nav.css" rel="stylesheet">
+        <style>
+            body{
+                text-align: center;
+                display: flex;
+                height: 100vh;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                /* background-color: rgba(0, 183, 255, 0.281); */
+                background-color: #b3aef1;
+
+            }
+            .inputBox{
+                width: 40%;
+                margin: 0%;
+                padding:50px;
+                border-radius: 25px;
+                background-color: white;
+                color: black;
+                /* background-color: #D9D9D9; */
+            }
+            form{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+            }
+            .credentials{
+                font-size: 24px;
+                text-align: left;
+            }
+            input{
+                width: 440px;
+                height: 50px;
+                border-radius: 10px;
+                margin-top: 10px;
+                box-shadow: 0px 0px 10px rgba(42, 50, 51, 0.692);
+                border: none;
+            }
+        </style>
+    </head>
+    <body>
+
+        
+        <div class="inputBox">
+            <form action="http://localhost:8080/MiniProject/Verify">
+                
+                <div class="credentials">
+                <h1 style="text-align: center;font-size: 34px;">LOGIN</h1>
+                <label>Username </label><br>
+                <input type="text" id="username" name="username">
+                <br>
+                <br>
+                <label>Password </label><br>
+                <input type="password" id="password" name="password">
+                <br>
+                <br>
+                <input type="submit" class="submit" style="display: block;margin-left: auto; margin-right: auto; background-color: #501EDA; color: white;" value="Submit">
+                </div>
+                
+            </form>
+        </div>
+        <script src="actions.js"></script>
+    </body>
+</html>

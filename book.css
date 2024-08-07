@@ -1,0 +1,44 @@
+.big_col{
+    width: 25%;
+}
+.avail{
+    width:100%; 
+    height:75px; 
+    color: #F5F8FF;
+    background-color: #501EDA; 
+    border:none;
+    border-radius: 0px 25px 0px 0px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.avail:hover{
+    background-color: #32303A; 
+}
+.slot{
+    height: 40px;
+    padding: 10px 40px;
+    border-radius: 10px;
+    border: 1px #ced1dd solid;
+}
+.free{
+    background-color: #F5F8FF;
+    color: black;
+}
+.free:hover{
+    background-color: #b3aef1;
+    /* color: #F5F8FF; */
+}
+.booked{
+    background-color: #32303A;
+    color: #F5F8FF;
+}
+.booked:hover{
+    cursor: not-allowed;
+}
+.selected, .selected:hover{
+    background-color: #501EDA;
+    color: #F5F8FF
+}
+.non-active:hover{
+    background-color: #b3aef1;
+}

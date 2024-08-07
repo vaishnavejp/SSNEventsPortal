@@ -1,0 +1,129 @@
+<web-app>
+    <display-name>servletFileUpload</display-name>
+    <welcome-file-list>
+        <welcome-file>login.html</welcome-file>
+    </welcome-file-list>
+    <servlet>
+        <servlet-name>Dashboard</servlet-name>
+        <servlet-class>Dashboard</servlet-class>
+        </servlet>
+        <servlet-mapping>
+        <servlet-name>Dashboard</servlet-name>
+        <url-pattern>/Dashboard</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+    <servlet-name>PastEvents</servlet-name>
+    <servlet-class>PastEvents</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    <servlet-name>PastEvents</servlet-name>
+    <url-pattern>/PastEvents</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+    <servlet-name>ViewUser</servlet-name>
+    <servlet-class>ViewUser</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    <servlet-name>ViewUser</servlet-name>
+    <url-pattern>/ViewUser</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+    <servlet-name>Calendar</servlet-name>
+    <servlet-class>Calendar</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    <servlet-name>Calendar</servlet-name>
+    <url-pattern>/Calendar</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>uploadServlet</servlet-name>
+        <servlet-class>Upload</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>uploadServlet</servlet-name>
+        <url-pattern>/uploadServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ED</servlet-name>
+        <servlet-class>EventDisplay</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ED</servlet-name>
+        <url-pattern>/ED</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Verify</servlet-name>
+        <servlet-class>AccountImpl</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Verify</servlet-name>
+        <url-pattern>/Verify</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>BookingHist</servlet-name>
+        <servlet-class>ViewBookingHistory</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BookingHist</servlet-name>
+        <url-pattern>/BookingHistory</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>PendingRequests</servlet-name>
+        <servlet-class>ViewPendingRequests</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PendingRequests</servlet-name>
+        <url-pattern>/PendingRequests</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Accept</servlet-name>
+        <servlet-class>AcceptBooking</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Accept</servlet-name>
+        <url-pattern>/Accept</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Reject</servlet-name>
+        <servlet-class>RejectBooking</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Reject</servlet-name>
+        <url-pattern>/Reject</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ShowSlots</servlet-name>
+        <servlet-class>ShowSlots</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ShowSlots</servlet-name>
+        <url-pattern>/ShowSlots</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>BookSlot</servlet-name>
+        <servlet-class>BookSlot</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BookSlot</servlet-name>
+        <url-pattern>/BookSlot</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>DS</servlet-name>
+        <servlet-class>DeleteServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DS</servlet-name>
+        <url-pattern>/DS</url-pattern>
+    </servlet-mapping>
+</web-app>
